@@ -14,4 +14,4 @@ jobs:
           GOOGLE_USER_KEY: ${{secrets.GOOGLE_KEY}}
           SPREADSHEET: '11SmJr_QYqN0exZvQeFJ5sqFB99O5CbLA4Ne2F1L5lzM'
           TABLE_START_CELL: 'A1'
-          DATA_FILE_PATH: 'foo.csv'
+          DATA_FILE_PATH: 'test_file.csv'
