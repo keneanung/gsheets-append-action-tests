@@ -1,0 +1,16 @@
+name: Test Workflow
+on: [workflow_dispatch]
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+      - uses: Mudlet/gsheets-append-action@allow-csv-input
+        with:
+          GOOGLE_USER_MAIL: ${{secrets.GOOGLE_EMAIL}}
+          GOOGLE_USER_KEY: ${{secrets.GOOGLE_KEY}}
+          SPREADSHEET: '11SmJr_QYqN0exZvQeFJ5sqFB99O5CbLA4Ne2F1L5lzM'
+          TABLE_START_CELL: 'A1'
