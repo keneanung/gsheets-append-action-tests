@@ -14,6 +14,6 @@ jobs:
           GOOGLE_USER_KEY: ${{secrets.GOOGLE_KEY}}
           SPREADSHEET: '11SmJr_QYqN0exZvQeFJ5sqFB99O5CbLA4Ne2F1L5lzM'
           TABLE_START_CELL: 'A1'
-          DATA_ENV_VAR: 'FOO'
+          DATA_ENV_NAME: 'FOO'
         env:
           FOO: "cell12,cell13"
